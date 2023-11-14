@@ -25,8 +25,6 @@ def hello_world():
 
 @app.route("/customhealth")
 def health():
-    conn = get_db_connection()
-    conn.execute("SELECT 1")
     return "OK"
 
 
