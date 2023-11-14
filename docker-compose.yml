@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./app
+    environment:
+      - CUSTOM_ENV_VAR=alpha
+      - CUSTOM_SECRET=beta
+    ports:
+      - 5001:5000
+
